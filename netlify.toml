@@ -1,0 +1,4 @@
+[build]
+  command = "notablog generate ."
+  publish = "public"
+  NODE_ENV = "10.15.3"

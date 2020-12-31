@@ -1,243 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta property="og:title" content="岳涵 Notion 頁面" />
+        <meta name="description" content="用 Notion 編輯，Netlify 部署的部落格，來自岳涵的想法與整理！" />
+    <meta property="og:description" content="用 Notion 編輯，Netlify 部署的部落格，來自岳涵的想法與整理！" />
+        <meta property="og:type" content="blog" />
+    <title>岳涵 Notion 頁面</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/notablog.css" />
+    <style>
+      :root {
+        font-size: 20px;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
-  <meta name="theme-color" content="#FFFFFF">
-  <meta property="og:title" content="岳涵 Notion 頁面">
-    <meta name="description" content="用 Notion 編輯，Netlify 部署的部落格，來自岳涵的想法與整理">
-  <meta property="og:description" content="用 Notion 編輯，Netlify 部署的部落格，來自岳涵的想法與整理">
-    <meta property="og:type" content="blog">
-  <title>岳涵 Notion 頁面</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
-  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
-  <link rel="stylesheet" type="text/css" href="css/theme.css">
-  <link rel="stylesheet" type="text/css" href="css/notablog.css">
-  <style>
-    :root {
-      font-size: 20px;
-    }
-  </style>
-</head>
-
-<body>
-  <nav class="Navbar">
-    <a href="index.html">
-      <div class="Navbar__Btn"><span>🍳</span> <span>Home</span></div>
-    </a>
-            <span class="Navbar__Delim">&centerdot;</span>
-    <a href="ideas.html">
-      <div class="Navbar__Btn"><span>🏗️</span> <span>創作想法</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="sites.html">
-      <div class="Navbar__Btn"><span>👀</span> <span>參考網站</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="src.html">
-      <div class="Navbar__Btn"><span>✳️</span> <span>學習資源</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="about.html">
-      <div class="Navbar__Btn"><span>🍩</span> <span>自我介紹</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="people.html">
-      <div class="Navbar__Btn"><span>⛹🏻</span> <span>想認識人物  </span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="questions.html">
-      <div class="Navbar__Btn"><span>❓</span> <span>問題銀行</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="writing .html">
-      <div class="Navbar__Btn"><span>📝</span> <span>寫作</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="readings.html">
-      <div class="Navbar__Btn"><span>🗽</span> <span>閱讀清單</span></div>
-    </a>
-                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="tools .html">
-      <div class="Navbar__Btn"><span>✨</span> <span>數位工具</span></div>
-    </a>
-                                <span class="Navbar__Delim">&centerdot;</span>
-    <a href="test.html">
-      <div class="Navbar__Btn"><span>💭</span> <span>Notion 測試</span></div>
-    </a>
-          </nav>
-  <header class="Header">
-        <div class="Header__Cover">
-      <img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc49052e7-3953-4b6f-b2d5-67c8a8d5d9f7%2FNotion-Office-1.jpg">
-    </div>
-        <div class="Header__Spacer ">
-    </div>
-        <div class="Header__Icon"><span>🍳</span></div>
-        <h1 class="Header__Title">岳涵 Notion 頁面</h1>
-        <div class="Header__Desc">
-      <span class="Header__DescBigQuoteMark">&ldquo;</span>
-      <span class="SemanticStringArray"><span class="SemanticString">用 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://notion.so">Notion</a></span><span class="SemanticString"> 編輯，</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://netlify.com">Netlify</a></span><span class="SemanticString"> 部署的部落格，來自岳涵的想法與整理</span></span>      <span class="Header__DescBigQuoteMark">&bdquo;</span>
-    </div>
-      </header>
-  <article class="ArticleList">
-                <article class="Article">
-      <h3 class="Article__Title">
-            <span>🏗️</span>        <a href="ideas.html">
-              創作想法            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">收集了我的專案點子</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Apr 22, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--brown">
+  <body>
+    <nav class="Navbar">
+      <a href="index.html">
+        <div class="Navbar__Btn"><span>🍳</span> <span>Home</span></div>
+      </a>
+             <span class="Navbar__Delim">&centerdot;</span>
+      <a href="ideas.html">
+        <div class="Navbar__Btn">
+          <span>🏗️</span> <span>創作想法</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="sites.html">
+        <div class="Navbar__Btn">
+          <span>👀</span> <span>參考網站</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="src.html">
+        <div class="Navbar__Btn">
+          <span>✳️</span> <span>學習資源</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="about.html">
+        <div class="Navbar__Btn">
+          <span>🍩</span> <span>自我介紹</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="people.html">
+        <div class="Navbar__Btn">
+          <span>⛹🏻</span> <span>啟發我的人</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="questions.html">
+        <div class="Navbar__Btn">
+          <span>❓</span> <span>問題銀行</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="writing .html">
+        <div class="Navbar__Btn">
+          <span>📝</span> <span>寫作</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="readings.html">
+        <div class="Navbar__Btn">
+          <span>🗽</span> <span>閱讀清單</span>
+        </div>
+      </a>
+              <span class="Navbar__Delim">&centerdot;</span>
+      <a href="tools .html">
+        <div class="Navbar__Btn">
+          <span>✨</span> <span>數位工具</span>
+        </div>
+      </a>
+                  <span class="Navbar__Delim">&centerdot;</span>
+      <a href="test.html">
+        <div class="Navbar__Btn">
+          <span>💭</span> <span>Notion 測試</span>
+        </div>
+      </a>
+           </nav>
+    <header class="Header">
+            <div class="Header__Cover">
+        <img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc49052e7-3953-4b6f-b2d5-67c8a8d5d9f7%2FNotion-Office-1.jpg" />
+      </div>
+            <div
+        class="Header__Spacer "
+      ></div>
+            <div class="Header__Icon"><span>🍳</span></div>
+            <h1 class="Header__Title">岳涵 Notion 頁面</h1>
+            <div class="Header__Desc">
+        <span class="Header__DescBigQuoteMark">&ldquo;</span>
+        <span class="SemanticStringArray"><span class="SemanticString">用 </span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://notion.so">Notion</a></span><span class="SemanticString"> 編輯，</span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="http://netlify.com">Netlify</a></span><span class="SemanticString"> 部署的部落格，來自岳涵的想法與整理！</span></span>        <span class="Header__DescBigQuoteMark">&bdquo;</span>
+      </div>
+          </header>
+    <article class="ArticleList">
+             <article class="Article">
+        <h3 class="Article__Title">
+          <span>🏗️</span>          <a href="ideas.html"> 創作想法 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">收集了我的專案點子</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Wed, Apr 22, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--brown"
+          >
             <a href="tag/ideas.html">ideas</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default"
+          >
             <a href="tag/about-me.html">about-me</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>👀</span>        <a href="sites.html">
-              參考網站            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">有特色、令我喜愛的個人網站</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>👀</span>          <a href="sites.html"> 參考網站 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">有特色、令我喜愛的個人網站</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow"
+          >
             <a href="tag/collection.html">collection</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue"
+          >
             <a href="tag/list.html">list</a>
           </span>
                   </div>
-    </article>
-                                              <article class="Article">
-      <h3 class="Article__Title">
-            <span>⛹🏻</span>        <a href="people.html">
-              想認識人物              </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">想要認識學習的人</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue">
+      </article>
+                  <article class="Article">
+        <h3 class="Article__Title">
+          <span>⛹🏻</span>          <a href="people.html"> 啟發我的人 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">想要認識學習的人</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue"
+          >
             <a href="tag/list.html">list</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--default"
+          >
             <a href="tag/about-me.html">about-me</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>❓</span>        <a href="questions.html">
-              問題銀行            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">累積的有趣問題</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>❓</span>          <a href="questions.html"> 問題銀行 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">累積的有趣問題</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow"
+          >
             <a href="tag/collection.html">collection</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>📝</span>        <a href="writing .html">
-              寫作            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">透過寫作分享想法</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--purple">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>📝</span>          <a href="writing .html"> 寫作 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">透過寫作分享想法</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--purple"
+          >
             <a href="tag/writing.html">writing</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--brown">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--brown"
+          >
             <a href="tag/ideas.html">ideas</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>🗽</span>        <a href="readings.html">
-              閱讀清單            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">我收集的的部落格</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>🗽</span>          <a href="readings.html"> 閱讀清單 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">我收集的的部落格</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow"
+          >
             <a href="tag/collection.html">collection</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue"
+          >
             <a href="tag/list.html">list</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>✨</span>        <a href="tools .html">
-              數位工具            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">收集我喜歡的科技產品、數位工具</span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Mon, Mar 30, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>✨</span>          <a href="tools .html"> 數位工具 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">收集我喜歡的科技產品、數位工具</span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Mon, Mar 30, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--yellow"
+          >
             <a href="tag/collection.html">collection</a>
           </span>
-                  <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue">
+                    <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--blue"
+          >
             <a href="tag/list.html">list</a>
           </span>
                   </div>
-    </article>
-                      <article class="Article">
-      <h3 class="Article__Title">
-            <span>⚙️</span>        <a href="set-npm-and-git.html">
-              如何設置 npm 與 git             </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">導覽如何從零開始在電腦設置 npm 與 git </span></span>      </p>
-            <div class="DateTagBar">
-                  <span class="DateTagBar__Item DateTagBar__Date">Posted on Sun, Mar 8, 2020</span>
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--green">
+      </article>
+              <article class="Article">
+        <h3 class="Article__Title">
+          <span>⚙️</span>          <a href="set-npm-and-git.html"> 如何設置 npm 與 git  </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">導覽如何從零開始在電腦設置 npm 與 git </span></span></p>
+                <div class="DateTagBar">
+                    <span class="DateTagBar__Item DateTagBar__Date"
+            >Posted on Sun, Mar 8, 2020</span
+          >
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--green"
+          >
             <a href="tag/tutorial.html">tutorial</a>
           </span>
                   </div>
-    </article>
-                                  <article class="Article">
-      <h3 class="Article__Title">
-            <span>💭</span>        <a href="test.html">
-              Notion 測試            </a>
-          </h3>
-            <p class="Article__Desc">
-          <span class="SemanticStringArray"><span class="SemanticString">測試 Notion 的功能</span></span>      </p>
-            <div class="DateTagBar">
-                            <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--red">
+      </article>
+                <article class="Article">
+        <h3 class="Article__Title">
+          <span>💭</span>          <a href="test.html"> Notion 測試 </a>
+        </h3>
+                <p class="Article__Desc"><span class="SemanticStringArray"><span class="SemanticString">測試 Notion 的功能</span></span></p>
+                <div class="DateTagBar">
+                     <span
+            class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--red"
+          >
             <a href="tag/test.html">test</a>
           </span>
                   </div>
-    </article>
-              </article>
-  <footer class="Footer">
-        <div>&copy; 岳涵 Notion 頁面 2019</div>
-        <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
-            rel="noopener noreferrer">Notablog</a>.
-        </div>
+      </article>
+           </article>
+    <footer class="Footer">
+      <div>&copy; 岳涵 Notion 頁面 2020</div>
+      <div>&centerdot;</div>
+      <div>
+        Powered by
+        <a
+          href="https://github.com/dragonman225/notablog"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Notablog</a
+        >.
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
